@@ -10,13 +10,13 @@ public class FunnyAlgorithms {
         {
             char c = str.charAt(i);
 
-            if (c != '-' && !Character.isDigit(c)) throw new RuntimeException("String must not contain characters different than digis.");
+            if (c != '-' && !Character.isDigit(c)) throw new IllegalArgumentException("String must not contain characters different than digis.");
         }
 
         number = Integer.parseInt(str);
 
         if (number < -32768 || number > 32767) {
-            throw new RuntimeException("Number must be in range [-32768, 32767]");
+            throw new IllegalArgumentException("Number must be in range [-32768, 32767]");
         }
 
         return number;
