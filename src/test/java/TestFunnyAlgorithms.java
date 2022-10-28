@@ -96,13 +96,6 @@ public class TestFunnyAlgorithms {
     }
 
     @Test
-    public void testSelectionSortedEmptyArray() {
-        System.out.println("Testing binary search");
-
-        Assert.assertEquals(-1, funnyAlgorithms.binarySearch(array, nonExistingTarget));
-    }
-
-    @Test
     public void testBinarySearchTargetExistance() {
         System.out.println("Testing binary search");
 
