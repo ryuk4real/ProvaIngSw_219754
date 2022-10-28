@@ -7,7 +7,13 @@ public class Main {
 
     System.out.println(FunnyAlgorithms.stringToIntConverter(testString));
 
-        System.out.println(testString);
+    System.out.println(testString);
+
+    int[] array = new int[]{};
+
+    FunnyAlgorithms funnyAlgorithms = new FunnyAlgorithms();
+
+        System.out.println(funnyAlgorithms.binarySearch(array, 2));
 
     }
 }

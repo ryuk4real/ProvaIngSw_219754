@@ -2,6 +2,8 @@ package org.example;
 
 public class FunnyAlgorithms {
 
+    public FunnyAlgorithms(){};
+
     public static int stringToIntConverter(String str) throws RuntimeException{
 
         int number;

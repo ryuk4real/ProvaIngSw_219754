@@ -2,8 +2,6 @@ import org.example.FunnyAlgorithms;
 import org.joda.time.DateTime;
 import org.junit.*;
 
-import static org.junit.Assert.assertEquals;
-
 public class TestFunnyAlgorithms {
 
     static String stringWithDash;
@@ -16,6 +14,8 @@ public class TestFunnyAlgorithms {
     static FunnyAlgorithms funnyAlgorithms;
     static int[] array;
     static int[] sortedArray;
+
+    static int[] emptyArray;
 
     static int target;
     static int nonExistingTarget;
@@ -32,6 +32,7 @@ public class TestFunnyAlgorithms {
 
         array = new int[]{10, 30, 2, 6};
         sortedArray = new int[]{2, 6, 10, 30};
+        emptyArray = new int[]{};
 
         target = 2;
         nonExistingTarget = 23;
@@ -92,6 +93,13 @@ public class TestFunnyAlgorithms {
 
         funnyAlgorithms.selectionSort(array, 1);
         Assert.assertArrayEquals(array, sortedArray);
+    }
+
+    @Test
+    public void testSelectionSortedEmptyArray() {
+        System.out.println("Testing binary search");
+
+        Assert.assertEquals(-1, funnyAlgorithms.binarySearch(array, nonExistingTarget));
     }
 
     @Test
